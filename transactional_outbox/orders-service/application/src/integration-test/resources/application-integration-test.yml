@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: orders-app
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    out-of-order: false
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true

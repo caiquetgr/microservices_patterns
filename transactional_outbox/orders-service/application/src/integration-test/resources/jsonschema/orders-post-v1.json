@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.orwg/draft/2020-12/schema",
+  "title": "Order response",
+  "description": "A order successfull response after the order is created",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The order identifier",
+      "type": "number"
+    },
+    "item": {
+      "description": "The orders' item name",
+      "type": "string"
+    },
+    "totalValue": {
+      "description": "Total value of the order",
+      "type": "number"
+    },
+    "installmentsValue": {
+      "description": "Installments value of the order",
+      "type": "number"
+    },
+    "installmentsQuantity": {
+      "description": "Installments quantity of the order",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "item",
+    "totalValue",
+    "installmentsValue",
+    "installmentsQuantity"
+  ]
+}
